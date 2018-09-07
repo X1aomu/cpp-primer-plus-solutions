@@ -1,0 +1,30 @@
+# Thie file is the template for all Makefiles
+# DO NOT DELETE THIS FILE
+
+LDFLAGS = -lstdc++
+CXX = g++
+FLAGS = -pipe -std=c++11 -pedantic-errors -Wall -Wextra -O0 -g
+CXXFLAGS = $(FLAGS) $(INC)
+
+SOURCES = $(wildcard *.cc)
+HEADERS = $(wildcard *.h)
+
+all: $(TARGETS)
+
+# Force to build *.o files first
+$(TARGETS): %: %.o # a Static Pattern Rule
+	$(CXX) $(LDFLAGS) -o $@ $^
+
+$(patsubst %.cc, %.o, $(SOURCES)): %.o: %.cc
+	$(CXX) $(CXXFLAGS) -c -o $@ $<
+
+# make *.h perceivable
+$(patsubst %.h, %.o, $(HEADERS)): %.o: %.h
+
+clean:
+	rm -f *.o
+
+clobber: clean
+	rm -f $(TARGETS)
+
+.PHONY: all clean clobber

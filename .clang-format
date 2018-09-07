@@ -1,0 +1,10 @@
+---
+Language:        Cpp
+BasedOnStyle:    Google
+BreakBeforeBraces: Linux
+ColumnLimit:     96
+IndentWidth:     4
+ContinuationIndentWidth: 8
+PointerAlignment: Right
+IndentCaseLabels: false
+...

@@ -1,2 +1,2 @@
 # cpp-primer-plus-solutions
-Cpp Primer Plus Solutions
+Solutions to Programming Exercices of _Cpp Primer Plus 6th Edition_
