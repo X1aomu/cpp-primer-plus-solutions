@@ -9,21 +9,15 @@
 
 using namespace std;
 
-void firstFunc()
-{
-    cout << "Three blind mice" << endl;
-}
+void firstFunc() { cout << "Three blind mice" << endl; }
 
-void secondFunc()
-{
-    cout << "See how they run" << endl;
-}
+void secondFunc() { cout << "See how they run" << endl; }
 
 int main()
 {
-    firstFunc();
-    firstFunc();
-    secondFunc();
-    secondFunc();
-    return 0;
+  firstFunc();
+  firstFunc();
+  secondFunc();
+  secondFunc();
+  return 0;
 }

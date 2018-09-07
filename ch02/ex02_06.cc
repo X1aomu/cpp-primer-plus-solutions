@@ -9,14 +9,18 @@
 
 using namespace std;
 
-double lightyearToAstronomicalunits(double lightyear) { return 63240 * lightyear; }
+double lightyearToAstronomicalunits(double lightyear)
+{
+  return 63240 * lightyear;
+}
 
 int main()
 {
-    cout << "Enter the number of light years: ";
-    double lightyear;
-    cin >> lightyear;
-    cout << lightyear << " light years = " << lightyearToAstronomicalunits(lightyear)
-         << " astronomical units." << endl;
-    return 0;
+  cout << "Enter the number of light years: ";
+  double lightyear;
+  cin >> lightyear;
+  cout << lightyear
+       << " light years = " << lightyearToAstronomicalunits(lightyear)
+       << " astronomical units." << endl;
+  return 0;
 }

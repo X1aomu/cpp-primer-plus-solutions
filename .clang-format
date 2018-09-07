@@ -1,10 +1,10 @@
 ---
 Language:        Cpp
-BasedOnStyle:    Google
+BasedOnStyle:    LLVM
 BreakBeforeBraces: Linux
-ColumnLimit:     96
-IndentWidth:     4
-ContinuationIndentWidth: 8
-PointerAlignment: Right
-IndentCaseLabels: false
+#IndentWidth:     4
+#ContinuationIndentWidth: 8
+DerivePointerAlignment: false
+PointerAlignment: Left
+AllowShortIfStatementsOnASingleLine: false
 ...

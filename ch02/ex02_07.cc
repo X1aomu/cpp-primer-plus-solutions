@@ -9,17 +9,20 @@
 
 using namespace std;
 
-void displayTime(unsigned hours, unsigned minutes) { cout << hours << ":" << minutes << endl; }
+void displayTime(unsigned hours, unsigned minutes)
+{
+  cout << hours << ":" << minutes << endl;
+}
 
 int main()
 {
-    unsigned hours;
-    unsigned minutes;
-    cout << "Enter the number of hours: ";
-    cin >> hours;
-    cout << "Enter the number of minutes: ";
-    cin >> minutes;
-    displayTime(hours, minutes);
+  unsigned hours;
+  unsigned minutes;
+  cout << "Enter the number of hours: ";
+  cin >> hours;
+  cout << "Enter the number of minutes: ";
+  cin >> minutes;
+  displayTime(hours, minutes);
 
-    return 0;
+  return 0;
 }
