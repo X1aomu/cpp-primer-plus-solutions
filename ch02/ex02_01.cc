@@ -14,9 +14,9 @@ using std::string;
 
 int main()
 {
-  const string name = "Wang Jiayuan";
-  const string address = "8th Buiding, Taishan Block, SCAU";
-  cout << "Name: " << name << endl;
-  cout << "Address: " << address << endl;
-  return 0;
+    const string name = "Wang Jiayuan";
+    const string address = "8th Buiding, Taishan Block, SCAU";
+    cout << "Name: " << name << endl;
+    cout << "Address: " << address << endl;
+    return 0;
 }

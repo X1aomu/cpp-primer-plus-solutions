@@ -2,8 +2,9 @@
 Language:        Cpp
 BasedOnStyle:    LLVM
 BreakBeforeBraces: Linux
-#IndentWidth:     4
-#ContinuationIndentWidth: 8
+IndentWidth:     4
+ContinuationIndentWidth: 8
+AccessModifierOffset: -4
 DerivePointerAlignment: false
 PointerAlignment: Left
 AllowShortIfStatementsOnASingleLine: false

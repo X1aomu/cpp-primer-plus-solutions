@@ -15,9 +15,9 @@ void secondFunc() { cout << "See how they run" << endl; }
 
 int main()
 {
-  firstFunc();
-  firstFunc();
-  secondFunc();
-  secondFunc();
-  return 0;
+    firstFunc();
+    firstFunc();
+    secondFunc();
+    secondFunc();
+    return 0;
 }

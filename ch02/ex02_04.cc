@@ -11,9 +11,9 @@ using namespace std;
 
 int main()
 {
-  cout << "Enter your age: ";
-  int age;
-  cin >> age;
-  cout << "Your age in months is: " << age * 12 << endl;
-  return 0;
+    cout << "Enter your age: ";
+    int age;
+    cin >> age;
+    cout << "Your age in months is: " << age * 12 << endl;
+    return 0;
 }
