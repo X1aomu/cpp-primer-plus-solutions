@@ -12,7 +12,10 @@
 
 using namespace std;
 
-double celsiusToFahrenheit(double celsius) { return 1.8 * celsius + 32.0; }
+double celsiusToFahrenheit(double celsius)
+{
+    return 1.8 * celsius + 32.0;
+}
 
 int main()
 {
