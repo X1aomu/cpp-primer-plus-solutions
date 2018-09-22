@@ -1,13 +1,21 @@
-// This file is a solution to an optional exercise provided by the instructor
-// in the course of teaching Cpp Primer Plus 6th Edition.
-//
-// @Chapter 02
-//
-// @Author Wang Jiayuan
-// @Created 2018-09-07 09:56:42 CST
-// @Description Define a struct to store name, sex and birthday of a student and
-// then implement input and output of two student's information in main
-// function. Also use class instead of struct to meet the requirements.
+//===----------------------------------------------------------------------===//
+///
+/// \file
+/// This file is a solution to an optional exercise provided by the instructor
+/// in the course of teaching Cpp Primer Plus 6th Edition.
+///
+/// Chapter: 02
+///
+/// Description:
+///
+/// Define a struct to store name, sex and birthday of a student and then
+/// implement input and output of two student's information in main function.
+/// Also use class instead of struct to meet the requirements.
+///
+/// \author Wang Jiayuan
+/// \since 2018-09-07 09:56:42 CST
+///
+//===----------------------------------------------------------------------===//
 #include <iomanip>
 #include <iostream>
 #include <regex>
@@ -15,9 +23,14 @@
 
 using namespace std;
 
-enum Sex { Male, Female };
+enum Sex
+{
+    Male,
+    Female
+};
 
-struct Date {
+struct Date
+{
     int year;
     int month;
     int day;
@@ -55,7 +68,8 @@ int main()
 
     Student a;
     cout << prompt;
-    while (!(cin >> a)) {
+    while (!(cin >> a))
+    {
         cout << errmsg;
         cin.clear();
     }
@@ -63,7 +77,8 @@ int main()
 
     Student b;
     cout << prompt;
-    while (!(cin >> b)) {
+    while (!(cin >> b))
+    {
         cout << errmsg;
         cin.clear();
     }
@@ -143,11 +158,16 @@ istream& operator>>(istream& is, Student& s)
     regex female(femalePattern);
     string sex;
     iss >> sex;
-    if (regex_match(sex.begin(), sex.end(), male)) {
+    if (regex_match(sex.begin(), sex.end(), male))
+    {
         s.sex = Sex::Male;
-    } else if (regex_match(sex.begin(), sex.end(), female)) {
+    }
+    else if (regex_match(sex.begin(), sex.end(), female))
+    {
         s.sex = Sex::Female;
-    } else {
+    }
+    else
+    {
         is.setstate(ios_base::failbit); // failed to get information
         return is;
     }

@@ -1,7 +1,7 @@
 ---
 Language:        Cpp
 BasedOnStyle:    LLVM
-BreakBeforeBraces: Linux
+BreakBeforeBraces: Allman
 IndentWidth:     4
 ContinuationIndentWidth: 8
 AccessModifierOffset: -4
