@@ -19,23 +19,41 @@
 ///
 //===----------------------------------------------------------------------===//
 #include <iostream>
+#include <sstream>
+
+#include <cctype>
 
 using namespace std;
 
-void print(string* str, int more);
+void print(string* str, int more = 0);
 
 int main()
 {
-    string str = "ex08_01.cc";
-    int n;
+    string str = "I love C++ !!!";
     while (true)
     {
-        cout << "Enter the second parameter of the called function, which is "
-                "an integer: ";
-        cin >> n;
+        cout << "Enter an integer as the second parameter(an empty line means "
+                "there is no second parameter): "
+             << "\n";
+        string line;
+        getline(cin, line);
+
         if (!cin)
             break;
-        print(&str, n);
+
+        if (line.empty())
+        {
+            print(&str);
+        }
+        else
+        {
+            if (!isdigit(line[0])) // 非正常输入
+                continue;
+            istringstream iss(line);
+            int n;
+            iss >> n;
+            print(&str, n);
+        }
     }
 
     return 0;
@@ -46,13 +64,15 @@ void print(string* str, int more)
     static int count = 0;
     ++count;
 
-    cout << *str << "\n";
-
     if (more)
     {
         for (int i = 0; i < count; ++i)
         {
             cout << *str << "\n";
         }
+    }
+    else
+    {
+        cout << *str << "\n";
     }
 }
