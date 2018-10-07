@@ -47,11 +47,15 @@ int main()
         }
         else
         {
-            if (!isdigit(line[0])) // 非正常输入
-                continue;
             istringstream iss(line);
             int n;
             iss >> n;
+            if (!iss) // 非正常输入
+            {
+                cout << "Invalid input, try again."
+                     << "\n";
+                continue;
+            }
             print(&str, n);
         }
     }
