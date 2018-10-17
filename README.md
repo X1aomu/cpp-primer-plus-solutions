@@ -8,3 +8,4 @@ Solutions to Programming Exercices of _Cpp Primer Plus 6th Edition_
 |        3 |        4 |
 |        4 |     5, 6 |
 |        5 |        8 |
+|        6 |        8 |
