@@ -1,7 +1,6 @@
 # Thie file is the template for all Makefiles
 # DO NOT DELETE THIS FILE
 
-LDFLAGS = -lstdc++
 CXX = g++
 FLAGS = -pipe -std=c++11 -pedantic-errors -Wall -Wextra -O0 -g
 CXXFLAGS = $(FLAGS) $(INC)
