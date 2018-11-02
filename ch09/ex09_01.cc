@@ -57,7 +57,7 @@
 /// \author Wang Jiayuan
 /// \since 2018-10-18 17:42:55 CST
 ///
-/// \sa golf.h golf.cc
+/// \sa ch09/golf.h ch09/golf.cc
 ///
 //===----------------------------------------------------------------------===//
 #include <algorithm>
