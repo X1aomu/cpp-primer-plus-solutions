@@ -12,3 +12,4 @@ Solutions to Programming Exercices of _Cpp Primer Plus 6th Edition_
 |        7 |        9 |
 |        9 |       10 |
 |       10 |       11 |
+|       11 |       12 |

@@ -1,4 +1,4 @@
-DIRS = ch02 ch04 ch05 ch06 ch08 ch09 ch10 ch11
+DIRS = ch02 ch04 ch05 ch06 ch08 ch09 ch10 ch11 ch12
 
 all:
 	@$(foreach dir,$(DIRS),cd $(dir) && $(MAKE) && cd .. &&) true;
