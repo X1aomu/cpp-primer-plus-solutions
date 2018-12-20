@@ -4,14 +4,14 @@
 /// This file is a part of the solution to the programming exercise 01 in
 /// chapter 14 of Cpp Primer Plus 6th Edition.
 ///
-/// For the problem description, see ex14_01.cc.
+/// The problem description is too long to be placed here...
 ///
 /// \author Wang Jiayuan
 /// \since 2018-12-17 22:37:04 CST
 ///
 //===----------------------------------------------------------------------===//
 
-// pe14-1.cpp -- using Wine class with containment
+// ex14_01.cc -- using Wine class with containment
 #include "winec.h"
 #include <iostream>
 int main(void)
