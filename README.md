@@ -1,4 +1,4 @@
-# cpp-primer-plus-solutions
+# [cpp-primer-plus-solutions](https://github.com/X1aomu/cpp-primer-plus-solutions)
 Solutions to Programming Exercices of _Cpp Primer Plus 6th Edition_
 
 # Timeline
@@ -13,5 +13,4 @@ Solutions to Programming Exercices of _Cpp Primer Plus 6th Edition_
 |        9 |       10 |
 |       10 |       11 |
 |       11 |       12 |
-|       12 |       13 |
-|       12 |       14 |
+|       12 |   13, 14 |
